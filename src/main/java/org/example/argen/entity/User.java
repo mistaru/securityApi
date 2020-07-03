@@ -2,6 +2,7 @@ package org.example.argen.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.example.argen.enums.Role;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
