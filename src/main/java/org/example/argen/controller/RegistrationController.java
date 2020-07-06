@@ -1,7 +1,7 @@
 package org.example.argen.controller;
 
 import org.example.argen.entity.User;
-import org.example.argen.serviceImp.UserServiceImpl;
+import org.example.argen.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,7 +17,7 @@ import static org.example.argen.constants.Constants.USER_ERROR_ADD;
 public class RegistrationController {
 
     @Autowired
-    private UserServiceImpl userServiceImpl;
+    private UserService userService;
 
     @GetMapping("/registration")
     public String registration() {
@@ -27,7 +27,7 @@ public class RegistrationController {
     @PostMapping("/registration")
     public String registerUser(@Valid User user, Model model) {
 
-        if (!userServiceImpl.registerUser(user)) {
+        if (!userService.registerUser(user)) {
             model.addAttribute(USER_ERROR_ADD, CANT_ADD_NEW_USER);
             return "registration";
         }

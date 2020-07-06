@@ -3,7 +3,7 @@ package org.example.argen.controller;
 import org.example.argen.entity.Todo;
 import org.example.argen.entity.User;
 import org.example.argen.enums.Status;
-import org.example.argen.serviceImp.TodoServiceImpl;
+import org.example.argen.service.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -22,7 +22,7 @@ import static org.example.argen.constants.Constants.*;
 public class TodoController {
 
     @Autowired
-    private TodoServiceImpl todoService;
+    private TodoService todoService;
 
     @GetMapping()
     public ModelAndView todoList(@AuthenticationPrincipal User user) {
@@ -59,7 +59,7 @@ public class TodoController {
 
     ) {
         Todo todo = todoService.findTodoById(id);
-        if (!todoService.saveTodo(user, todo, title, description, status)) {
+        if (!this.todoService.saveTodo(user, todo, title, description, status)) {
             model.addAttribute(TODO_ERROR_EDIT, CANT_EDIT_TODO);
             return "todo/todoEdit";
         }

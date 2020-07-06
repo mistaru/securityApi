@@ -1,4 +1,4 @@
-package org.example.argen.serviceImp;
+package org.example.argen.service.Imp;
 
 import org.example.argen.enums.Role;
 import org.example.argen.entity.User;

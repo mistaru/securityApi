@@ -14,4 +14,6 @@ public interface TodoService {
 
     boolean deleteTodo(User user, Todo todo);
 
+    boolean saveTodo(User user, Todo todo, String title, String description, Status status);
+
 }

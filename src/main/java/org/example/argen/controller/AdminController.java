@@ -2,7 +2,7 @@ package org.example.argen.controller;
 
 import org.example.argen.enums.Role;
 import org.example.argen.entity.User;
-import org.example.argen.serviceImp.UserServiceImpl;
+import org.example.argen.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
@@ -16,12 +16,12 @@ import java.util.Map;
 public class AdminController {
 
     @Autowired
-    private UserServiceImpl userServiceImpl;
+    private UserService userService;
 
     @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping
     public String userList(Model model) {
-        model.addAttribute("users", userServiceImpl.findAllUsers());
+        model.addAttribute("users", userService.findAllUsers());
         return "user/userList";
     }
 
@@ -40,7 +40,7 @@ public class AdminController {
             @RequestParam("userId") User user,
             @RequestParam Boolean active
     ) {
-        userServiceImpl.saveUser(user,active, form);
+        userService.saveUser(user,active, form);
         return "redirect:/user";
     }
 
