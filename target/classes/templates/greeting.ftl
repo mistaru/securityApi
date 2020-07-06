@@ -4,7 +4,8 @@
 <@c.page>
     <div class="jumbotron bg-light text-center">
         <h1 class="display-2 ">Hello, ${name}. This is my SecurityApi!</h1>
-        <img class="mx-auto justify-content-center d-flex" src="https://www.prlog.org/12665991-ilocker-app-icon.jpg" width="150" alt="online store png">
+        <img class="mx-auto justify-content-center d-flex" src="https://www.prlog.org/12665991-ilocker-app-icon.jpg"
+             width="150" alt="online store png">
 
         <hr color="lightblue">
         <h3>

@@ -17,14 +17,4 @@ public class MainController {
         return "main";
     }
 
-/*    @GetMapping("/todoEdit")
-    public String todoEdit() {
-        return "todo/todoEdit";
-    }
-
-    @GetMapping("/todoDelete")
-    public String todoDelete() {
-        return "todo/todoDelete";
-    }*/
-
 }

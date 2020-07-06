@@ -17,7 +17,7 @@
                         <input type="text" name="title" class="form-control" placeholder="Title"/>
                     </div>
                     <div class="col-auto">
-                        <textarea class="form-control" name="description" rows="1" placeholder="Description" ></textarea>
+                        <textarea class="form-control" name="description" rows="1" placeholder="Description"></textarea>
                     </div>
                     <div class="col-auto">
                         <input type="hidden" name="_csrf" value="${_csrf.token}"/>

@@ -25,7 +25,6 @@ public class AdminController {
         return "user/userList";
     }
 
-
     @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("{user}")
     public String userEditForm(@PathVariable User user, Model model) {
@@ -33,7 +32,6 @@ public class AdminController {
         model.addAttribute("roles", Role.values());
         return "user/userEdit";
     }
-
 
     @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping

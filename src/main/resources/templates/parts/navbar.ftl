@@ -3,9 +3,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
     <a class="navbar-brand" href="/main">
-        <img src="https://www.epicit.com.au/wp-content/uploads/icon-data-breach-security.svg" width="30" height="30" alt="">
+        <img src="https://www.epicit.com.au/wp-content/uploads/icon-data-breach-security.svg" width="30" height="30"
+             alt="">
         SecurityApi</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -19,15 +21,15 @@
             </#if>
 
             <#if isAdmin>
-            <li class="nav-item">
-                <a class="nav-link" href="/user">User List</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user">User List</a>
+                </li>
             </#if>
         </ul>
 
         <div class="navbar-text mr-4">${name}</div>
         <#if known>
-        <@l.logout />
+            <@l.logout />
         </#if>
         <#if !known>
             <a href="/login" class="btn btn-primary" role="button">Sign in</a>

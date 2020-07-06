@@ -3,14 +3,14 @@
     <#if TODO_ERROR_EDIT??>
         <div>
             <br>
-            <h3 align="center"  style="color:#b80c09" >${TODO_ERROR_EDIT}</h3>
+            <h3 align="center" style="color:#b80c09">${TODO_ERROR_EDIT}</h3>
         </div>
     </#if>
 
     <#if TODO_ERROR_DELETE??>
         <div>
             <br>
-            <h3 align="center"  style="color:#b80c09">${TODO_ERROR_DELETE}</h3>
+            <h3 align="center" style="color:#b80c09">${TODO_ERROR_DELETE}</h3>
         </div>
     </#if>
 

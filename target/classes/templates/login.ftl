@@ -3,11 +3,7 @@
 
 <@c.page>
     <div>
-            <h2 align="center" style="color:Black">Authorization</h2>
+        <h2 align="center" style="color:Black">Authorization</h2>
     </div>
-
-
-
-
-<@l.login "/login" false/>
+    <@l.login "/login" false/>
 </@c.page>

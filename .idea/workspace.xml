@@ -2,45 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d399ef27-f158-4a33-9f75-6e124e69f80f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/constants/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/todo/todoEdit.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/todo/todoList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/configuration/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/RegistrationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/entity/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/entity/Todo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/enums/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/enums/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/enums/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/enums/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/TodoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/TodoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/serviceImp/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/serviceImp/TodoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/serviceImp/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/serviceImp/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/userEdit.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/userList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/securityapi.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/configuration/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/configuration/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/entity/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/login.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/navbar.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userEdit.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/userList.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todoEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/todo/todoEdit.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todoList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/todo/todoList.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +108,7 @@
       <updated>1593682344995</updated>
       <workItem from="1593682346845" duration="37285000" />
       <workItem from="1593778011809" duration="43306000" />
-      <workItem from="1593931157502" duration="31711000" />
+      <workItem from="1593931157502" duration="32911000" />
     </task>
     <servers />
   </component>
@@ -171,41 +144,45 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593956612659" />
-    <state width="1323" height="73" key="GridCell.Tab.0.bottom" timestamp="1594024451081">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1594024737270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="73" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594024451081" />
-    <state width="1323" height="73" key="GridCell.Tab.0.center" timestamp="1594024451080">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594024737270" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1594024737268">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="73" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594024451080" />
-    <state width="1323" height="73" key="GridCell.Tab.0.left" timestamp="1594024451080">
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594024737268" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1594024737268">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="73" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594024451080" />
-    <state width="1323" height="73" key="GridCell.Tab.0.right" timestamp="1594024451080">
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594024737268" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1594024737269">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="73" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594024451080" />
-    <state width="1323" height="73" key="GridCell.Tab.1.bottom" timestamp="1594024451081">
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594024737269" />
+    <state width="1323" height="171" key="GridCell.Tab.1.bottom" timestamp="1594024737270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="73" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594024451081" />
-    <state width="1323" height="73" key="GridCell.Tab.1.center" timestamp="1594024451081">
+    <state width="1323" height="171" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594024737270" />
+    <state width="1323" height="171" key="GridCell.Tab.1.center" timestamp="1594024737270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="73" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594024451081" />
-    <state width="1323" height="73" key="GridCell.Tab.1.left" timestamp="1594024451081">
+    <state width="1323" height="171" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594024737270" />
+    <state width="1323" height="171" key="GridCell.Tab.1.left" timestamp="1594024737270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="73" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594024451081" />
-    <state width="1323" height="73" key="GridCell.Tab.1.right" timestamp="1594024451081">
+    <state width="1323" height="171" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594024737270" />
+    <state width="1323" height="171" key="GridCell.Tab.1.right" timestamp="1594024737270">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="73" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594024451081" />
+    <state width="1323" height="171" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594024737270" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1593712101258">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1593712101258" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594025859057">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594025859057" />
   </component>
 </project>
