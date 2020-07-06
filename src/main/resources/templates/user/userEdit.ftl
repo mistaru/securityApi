@@ -1,4 +1,4 @@
-<#import "parts/common.ftl" as c>
+<#import "../parts/common.ftl" as c>
 
 <@c.page>
     <h2 style="color:Black">User editor : ${user.fullName}</h2>

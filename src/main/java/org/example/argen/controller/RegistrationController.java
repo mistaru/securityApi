@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.validation.Valid;
 
+import static org.example.argen.constants.Constants.CANT_ADD_NEW_USER;
+import static org.example.argen.constants.Constants.USER_ERROR_ADD;
+
 @Controller
 public class RegistrationController {
 
@@ -25,7 +28,7 @@ public class RegistrationController {
     public String registerUser(@Valid User user, Model model) {
 
         if (!userServiceImpl.registerUser(user)) {
-            model.addAttribute("usernameError", "This user exists, enter a different user name");
+            model.addAttribute(USER_ERROR_ADD, CANT_ADD_NEW_USER);
             return "registration";
         }
         return "redirect:/login";

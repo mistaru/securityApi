@@ -18,13 +18,11 @@ public class AdminController {
     @Autowired
     private UserServiceImpl userServiceImpl;
 
-
     @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping
     public String userList(Model model) {
         model.addAttribute("users", userServiceImpl.findAllUsers());
-
-        return "userList";
+        return "user/userList";
     }
 
 
@@ -33,7 +31,7 @@ public class AdminController {
     public String userEditForm(@PathVariable User user, Model model) {
         model.addAttribute("user", user);
         model.addAttribute("roles", Role.values());
-        return "userEdit";
+        return "user/userEdit";
     }
 
 
@@ -47,4 +45,5 @@ public class AdminController {
         userServiceImpl.saveUser(user,active, form);
         return "redirect:/user";
     }
+
 }

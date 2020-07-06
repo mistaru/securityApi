@@ -3,20 +3,28 @@ package org.example.argen.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import java.util.Map;
 
 @Controller
 public class MainController {
 
     @GetMapping("/")
-    public String greeting(Map<String, Object> model) {
+    public String greeting() {
         return "greeting";
     }
 
     @GetMapping("/main")
-    public String mainPage(Map<String, Object> model) {
+    public String mainPage() {
         return "main";
     }
 
+/*    @GetMapping("/todoEdit")
+    public String todoEdit() {
+        return "todo/todoEdit";
+    }
+
+    @GetMapping("/todoDelete")
+    public String todoDelete() {
+        return "todo/todoDelete";
+    }*/
 
 }

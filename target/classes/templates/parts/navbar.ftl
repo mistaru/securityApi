@@ -11,6 +11,13 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+
+            <#if !isAdmin>
+                <li class="nav-item">
+                    <a class="nav-link" href="/todo">Todo list</a>
+                </li>
+            </#if>
+
             <#if isAdmin>
             <li class="nav-item">
                 <a class="nav-link" href="/user">User List</a>
