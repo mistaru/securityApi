@@ -1,6 +1,6 @@
 package org.example.argen.configuration;
 
-import org.example.argen.service.Imp.UserServiceImpl;
+import org.example.argen.service.Impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
