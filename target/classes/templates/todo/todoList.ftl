@@ -20,6 +20,9 @@
                         <textarea class="form-control" name="description" rows="1" placeholder="Description"></textarea>
                     </div>
                     <div class="col-auto">
+                        <input type="date" name="closingDate" class="form-control" placeholder="closingDate"/>
+                    </div>
+                    <div class="col-auto">
                         <input type="hidden" name="_csrf" value="${_csrf.token}"/>
                         <button class="btn btn-primary" type="submit">Create</button>
                     </div>
@@ -38,6 +41,7 @@
                                 <div class="card-header">${newTodo.getStatus()}</div>
                                 <h5 class="card-title">${newTodo.getTitle()}</h5>
                                 <p class="card-text">${newTodo.getDescription()}</p>
+                                <p class="card-text">${newTodo.getClosingDate()}</p>
                                 <a class="btn btn-primary btn-lg" href="/todo/${newTodo.id}" role="button">Edit</a>
                             </div>
                         </div>
@@ -57,6 +61,7 @@
                                 <div class="card-header">${doingTodo.getStatus()}</div>
                                 <h5 class="card-title">${doingTodo.getTitle()}</h5>
                                 <p class="card-text">${doingTodo.getDescription()}</p>
+                                <p class="card-text">${doingTodo.getClosingDate()}</p>
                                 <a class="btn btn-primary btn-lg" href="/todo/${doingTodo.id}" role="button">Edit</a>
                             </div>
                         </div>
@@ -76,6 +81,7 @@
                                 <div class="card-header">${doneTodo.getStatus()}</div>
                                 <h5 class="card-title">${doneTodo.getTitle()}</h5>
                                 <p class="card-text">${doneTodo.getDescription()}</p>
+                                <p class="card-text">${doneTodo.getClosingDate()}</p>
                                 <a class="btn btn-primary btn-lg" href="/todo/${doneTodo.id}" role="button">Edit</a>
                             </div>
                         </div>

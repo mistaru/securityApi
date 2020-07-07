@@ -6,6 +6,7 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
+
                             <#if isRegisterForm>
                                 <div class="form-group">
                                     <label for="name" class="cols-sm-2 control-label">Full Name</label>
@@ -20,6 +21,7 @@
                                     </div>
                                 </div>
                             </#if>
+
                             <div class="form-group">
                                 <label for="username" class="cols-sm-2 control-label">Username</label>
                                 <div class="cols-sm-10">
@@ -39,6 +41,20 @@
                                 </div>
                             </#if>
 
+                            <#if isRegisterForm>
+                            <div class="form-group">
+                                <label for="username" class="cols-sm-2 control-label">Email</label>
+                                <div class="cols-sm-10">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-envelope fa"
+                                                                           aria-hidden="true"></i></span>
+                                        <input type="text" name="email" class="form-control"
+                                               placeholder="Enter your Email" required/>
+                                    </div>
+                                </div>
+                            </div>
+                            </#if>
+
                             <div class="form-group">
                                 <label for="password" class="cols-sm-2 control-label">Password</label>
                                 <div class="cols-sm-10">
@@ -50,6 +66,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="form-group ">
                                 <input type="hidden" name="_csrf" value="${_csrf.token}"/>
                                 <button class="btn btn-primary"
@@ -58,6 +75,7 @@
                                                          class="link float-right">Register</a></#if>
                                 <#if isRegisterForm> <a href="/login" class="link float-right">Sign In</a></#if>
                             </div>
+
                         </div>
                     </div>
                 </div>
