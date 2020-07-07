@@ -4,7 +4,6 @@ import org.example.argen.entity.Todo;
 import org.example.argen.entity.User;
 import org.example.argen.enums.Status;
 import org.example.argen.service.TodoService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -14,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 
 import static org.example.argen.constants.Constants.*;
 
@@ -21,8 +21,11 @@ import static org.example.argen.constants.Constants.*;
 @RequestMapping("/todo")
 public class TodoController {
 
-    @Autowired
     private TodoService todoService;
+
+    public TodoController(@NotNull TodoService todoService) {
+        this.todoService = todoService;
+    }
 
     @GetMapping()
     public ModelAndView todoList(@AuthenticationPrincipal User user) {

@@ -5,7 +5,6 @@ import org.example.argen.entity.User;
 import org.example.argen.enums.Status;
 import org.example.argen.repository.TodoRepository;
 import org.example.argen.service.TodoService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -14,8 +13,11 @@ import java.util.List;
 @Service
 public class TodoServiceImpl implements TodoService {
 
-    @Autowired
     private TodoRepository todoRepository;
+
+    public TodoServiceImpl(TodoRepository todoRepository) {
+        this.todoRepository = todoRepository;
+    }
 
     public void addNewTodo(User user, Todo todo) {
         todo.setAuthor(user);

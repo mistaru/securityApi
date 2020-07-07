@@ -1,8 +1,6 @@
 package org.example.argen.service.Imp;
 
 import org.example.argen.entity.Todo;
-import org.example.argen.enums.Status;
-import org.example.argen.repository.TodoRepository;
 import org.example.argen.service.EmailService;
 import org.example.argen.service.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,10 +20,12 @@ public class EmailServiceImpl implements EmailService {
     @Autowired
     private JavaMailSender mailSender;
 
-    @Autowired
     private TodoService todoService;
-
     private LocalDate date = LocalDate.now();
+
+    public EmailServiceImpl(TodoService todoService) {
+        this.todoService = todoService;
+    }
 
     @Value("${spring.mail.username}")
     private String username;
@@ -38,7 +38,7 @@ public class EmailServiceImpl implements EmailService {
         mailMessage.setSubject(subject);
         mailMessage.setText(message);
 
-        this.mailSender.send(mailMessage);
+        mailSender.send(mailMessage);
     }
 
     @Scheduled(cron = CRON)
@@ -50,4 +50,5 @@ public class EmailServiceImpl implements EmailService {
                             todo.getTitle()));
         }
     }
+
 }

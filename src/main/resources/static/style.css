@@ -34,19 +34,25 @@ body {
     width: 33%;
 }
 
-input:invalid {border-color: red;}
+input:invalid {
+    border-color: red;
+}
 
-input:valid {border-color: green;}
+input:valid {
+    border-color: green;
+}
 
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-    float:right;
+    float: right;
 }
 
-.switch input {display:none;}
+.switch input {
+    display: none;
+}
 
 .slider {
     position: absolute;

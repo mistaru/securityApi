@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
 import java.time.LocalDate;
 import java.util.List;
 
-public interface TodoRepository extends JpaRepository <Todo, User> {
+public interface TodoRepository extends JpaRepository<Todo, User> {
     Todo findTodoById(Long id);
 
     List<Todo> findTodoByStatusAndAuthor(Status status, User user);
@@ -18,6 +18,6 @@ public interface TodoRepository extends JpaRepository <Todo, User> {
     void deleteById(Long id);
 
     @Query(value = "SELECT u from Todo u where u.status <> org.example.argen.enums.Status.DONE and u.closingDate =:date ")
-    List<Todo> ListIsNotDoneTodo(@Param("date")LocalDate date);
+    List<Todo> ListIsNotDoneTodo(@Param("date") LocalDate date);
 
 }
