@@ -45,7 +45,7 @@ public class EmailServiceImpl implements EmailService {
         for (Todo todo : todoService.ListIsNotDoneTodo(LocalDate.now())) {
             send(todo.getAuthor().getEmail(), SUBJECT_TODO_EXPIRATION,
                     String.format(TODO_EXPIRATION_MESSAGE, todo.getAuthor().
-                                    getFullName(), todo.getTitle()));
+                            getFullName(), todo.getTitle()));
         }
     }
 

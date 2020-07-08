@@ -19,6 +19,7 @@ import static org.example.argen.constants.Constants.*;
 
 @Controller
 @RequestMapping("/todo")
+@PreAuthorize("hasAuthority('USER')")
 public class TodoController {
 
     private final TodoService todoService;
@@ -35,14 +36,12 @@ public class TodoController {
                 .addObject("doneTodo", todoService.listTodo(Status.DONE, user));
     }
 
-    @PreAuthorize("hasAuthority('USER')")
     @PostMapping("todoList")
     public String addNewTodo(@AuthenticationPrincipal User user, @Valid Todo todo) {
         todoService.addNewTodo(user, todo);
         return "redirect:/todo";
     }
 
-    @PreAuthorize("hasAuthority('USER')")
     @GetMapping("{id}")
     public String todoEditForm(@PathVariable Long id, Model model) {
         Todo todo = todoService.findTodoById(id);
@@ -50,7 +49,6 @@ public class TodoController {
         return "todo/todoEdit";
     }
 
-    @PreAuthorize("hasAuthority('USER')")
     @PostMapping()
     public String saveTodo(
             @AuthenticationPrincipal User user,
@@ -69,7 +67,6 @@ public class TodoController {
         return "redirect:/todo";
     }
 
-    @PreAuthorize("hasAuthority('USER')")
     @PostMapping("deleteTodo")
     @Transactional
     public String deleteTodo(
