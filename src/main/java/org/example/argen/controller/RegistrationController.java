@@ -16,7 +16,7 @@ import static org.example.argen.constants.Constants.USER_ERROR_ADD;
 @Controller
 public class RegistrationController {
 
-    private UserService userService;
+    private final UserService userService;
 
     public RegistrationController(@NotNull UserService userService) {
         this.userService = userService;

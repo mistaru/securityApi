@@ -7,15 +7,16 @@ import org.example.argen.repository.TodoRepository;
 import org.example.argen.service.TodoService;
 import org.springframework.stereotype.Service;
 
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.util.List;
 
 @Service
 public class TodoServiceImpl implements TodoService {
 
-    private TodoRepository todoRepository;
+    private final TodoRepository todoRepository;
 
-    public TodoServiceImpl(TodoRepository todoRepository) {
+    public TodoServiceImpl(@NotNull TodoRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
 

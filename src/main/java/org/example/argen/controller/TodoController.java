@@ -21,7 +21,7 @@ import static org.example.argen.constants.Constants.*;
 @RequestMapping("/todo")
 public class TodoController {
 
-    private TodoService todoService;
+    private final TodoService todoService;
 
     public TodoController(@NotNull TodoService todoService) {
         this.todoService = todoService;

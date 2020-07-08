@@ -4,25 +4,24 @@ import org.example.argen.enums.Role;
 import org.example.argen.entity.User;
 import org.example.argen.repository.UserRepository;
 import org.example.argen.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import javax.validation.constraints.NotNull;
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserDetailsService, UserService {
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
+    private final PasswordEncoder passwordEncoder;
+    private final UserRepository userRepository;
 
-    private UserRepository userRepository;
-
-    public UserServiceImpl(UserRepository userRepository) {
+    public UserServiceImpl(@NotNull PasswordEncoder passwordEncoder, @NotNull UserRepository userRepository) {
+        this.passwordEncoder = passwordEncoder;
         this.userRepository = userRepository;
     }
 
