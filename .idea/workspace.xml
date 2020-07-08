@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d399ef27-f158-4a33-9f75-6e124e69f80f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_Users.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V3__Encode_Passwords.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/configuration/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/EmailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/configuration/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/configuration/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/TodoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/TodoController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +54,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/Develop/kfp34" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/db/migration" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -51,8 +64,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Арген\Documents\securityapi\src\main\resources\templates\user" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Арген\Documents\securityapi\src\main\resources\db\migration" />
+      <recent name="C:\Users\Арген\Documents\securityapi\src\main\resources" />
+      <recent name="C:\Users\Арген\Documents\securityapi\src\main\resources\templates\todo" />
+      <recent name="C:\Users\Арген\Documents\securityapi\src\main\java\org\example\argen\service" />
+      <recent name="C:\Develop\securityapi\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.argen.service.Imp" />
@@ -60,12 +77,8 @@
       <recent name="org.example.argen.constants" />
       <recent name="org.example.argen" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Арген\Documents\securityapi\src\main\resources\templates\todo" />
-      <recent name="C:\Users\Арген\Documents\securityapi\src\main\java\org\example\argen\service" />
-      <recent name="C:\Develop\securityapi\src\main\resources" />
-      <recent name="C:\Develop\securityapi\src\main\java\org\example\argen" />
-      <recent name="C:\Develop\securityapi\src\main\resources\templates" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Арген\Documents\securityapi\src\main\resources\templates\user" />
     </key>
   </component>
   <component name="RunManager">
@@ -134,50 +147,50 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1594202695555" />
-    <state x="479" y="249" width="409" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593782955802">
+    <state x="479" y="249" width="415" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594208714881">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="479" y="249" width="409" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1593782955802" />
+    <state x="479" y="249" width="415" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1594208714881" />
     <state x="103" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594145460700">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="103" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1594145460700" />
-    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl" timestamp="1594150074051">
+    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl" timestamp="1594208042001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594150074051" />
-    <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1594202727246">
+    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594208042001" />
+    <state width="1323" height="146" key="GridCell.Tab.0.bottom" timestamp="1594214138596">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594202727246" />
-    <state width="1323" height="2" key="GridCell.Tab.0.center" timestamp="1594202727246">
+    <state width="1323" height="146" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594214138596" />
+    <state width="1323" height="146" key="GridCell.Tab.0.center" timestamp="1594214138595">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594202727246" />
-    <state width="1323" height="2" key="GridCell.Tab.0.left" timestamp="1594202727246">
+    <state width="1323" height="146" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594214138595" />
+    <state width="1323" height="146" key="GridCell.Tab.0.left" timestamp="1594214138595">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594202727246" />
-    <state width="1323" height="2" key="GridCell.Tab.0.right" timestamp="1594202727246">
+    <state width="1323" height="146" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594214138595" />
+    <state width="1323" height="146" key="GridCell.Tab.0.right" timestamp="1594214138596">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594202727246" />
-    <state width="1323" height="2" key="GridCell.Tab.1.bottom" timestamp="1594202727247">
+    <state width="1323" height="146" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594214138596" />
+    <state width="1323" height="146" key="GridCell.Tab.1.bottom" timestamp="1594214138597">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594202727247" />
-    <state width="1323" height="2" key="GridCell.Tab.1.center" timestamp="1594202727247">
+    <state width="1323" height="146" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594214138597" />
+    <state width="1323" height="146" key="GridCell.Tab.1.center" timestamp="1594214138596">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594202727247" />
-    <state width="1323" height="2" key="GridCell.Tab.1.left" timestamp="1594202727247">
+    <state width="1323" height="146" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594214138596" />
+    <state width="1323" height="146" key="GridCell.Tab.1.left" timestamp="1594214138596">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594202727247" />
-    <state width="1323" height="2" key="GridCell.Tab.1.right" timestamp="1594202727247">
+    <state width="1323" height="146" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594214138596" />
+    <state width="1323" height="146" key="GridCell.Tab.1.right" timestamp="1594214138597">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="2" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594202727247" />
+    <state width="1323" height="146" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594214138597" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1594143396184">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

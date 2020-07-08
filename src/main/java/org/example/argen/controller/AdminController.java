@@ -13,6 +13,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/user")
+@PreAuthorize("hasAuthority('ADMIN')")
 public class AdminController {
 
     private final UserService userService;
@@ -21,14 +22,12 @@ public class AdminController {
         this.userService = userService;
     }
 
-    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping
     public String userList(Model model) {
         model.addAttribute("users", userService.findAllUsers());
         return "user/userList";
     }
 
-    @PreAuthorize("hasAuthority('ADMIN')")
     @GetMapping("{user}")
     public String userEditForm(@PathVariable User user, Model model) {
         model.addAttribute("user", user);
@@ -36,7 +35,6 @@ public class AdminController {
         return "user/userEdit";
     }
 
-    @PreAuthorize("hasAuthority('ADMIN')")
     @PostMapping
     public String userSave(
             @RequestParam Map<String, String> form,
