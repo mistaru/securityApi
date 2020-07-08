@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d399ef27-f158-4a33-9f75-6e124e69f80f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/EmailServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/TodoServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/configuration/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/EmailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/TodoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/configuration/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/configuration/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/TodoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/TodoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Imp/EmailServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Imp/TodoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Imp/UserServiceImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +106,7 @@
       <workItem from="1594107632022" duration="17363000" />
       <workItem from="1594143282153" duration="111000" />
       <workItem from="1594143444431" duration="12121000" />
-      <workItem from="1594190829238" duration="6209000" />
+      <workItem from="1594190829238" duration="6989000" />
     </task>
     <servers />
   </component>
