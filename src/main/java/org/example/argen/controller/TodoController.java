@@ -1,5 +1,6 @@
 package org.example.argen.controller;
 
+import org.example.argen.dto.TodoFilterDto;
 import org.example.argen.entity.Todo;
 import org.example.argen.entity.User;
 import org.example.argen.enums.Status;
@@ -14,6 +15,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.example.argen.constants.Constants.*;
 
@@ -31,9 +35,7 @@ public class TodoController {
     @GetMapping()
     public ModelAndView todoList(@AuthenticationPrincipal User user) {
         return new ModelAndView("todo/todoList")
-                .addObject("newTodo", todoService.listTodo(Status.NEW, user))
-                .addObject("doingTodo", todoService.listTodo(Status.DOING, user))
-                .addObject("doneTodo", todoService.listTodo(Status.DONE, user));
+                .addObject("allTodo", todoService.findTodoByAuthor(user));
     }
 
     @PostMapping("todoList")
@@ -80,6 +82,22 @@ public class TodoController {
             return "todo/todoEdit";
         }
         return "redirect:/todo";
+    }
+
+    @RequestMapping("/list2")
+    public ModelAndView list2(TodoFilterDto todo, @AuthenticationPrincipal User user) {
+
+        List<Todo> todoList = todoService.findAllTodo(todoService.filterSearch(todo));
+
+        List<Todo> todoList2 = new ArrayList<>();
+
+        for (Todo todo1 : todoList) {
+            if (todo1.getAuthor().getUsername().equals(user.getUsername()))
+                todoList2.add(todo1);
+        }
+
+        return new ModelAndView("todo/todoList")
+                .addObject("allTodo", todoList2);
     }
 
 }

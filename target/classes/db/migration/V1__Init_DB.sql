@@ -1,4 +1,4 @@
-create sequence hibernate_sequence start 1 increment 1;
+create sequence hibernate_sequence start 3 increment 1;
 create table todo (
 	id  bigserial not null,
 	closing_date date,

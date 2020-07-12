@@ -1,45 +1,10 @@
-body {
-    color: #0c0233;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.btn1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    width: 50px;
-    height: 50px;
-    border: 2px solid #f9f9ea;
-    padding: 4px 8px;
-    border-radius: 50%;
-    background: #f9f9ea;
-    cursor: pointer;
-}
-
-.list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
-
-.list__item {
-    border: 1px solid #f9f9ea;
-    padding: 10px;
-    width: 33%;
-}
 
 input:invalid {
-    border-color: red;
+    border-color: #ff8c66;
 }
 
 input:valid {
-    border-color: green;
+    border-color: #0c8048;
 }
 
 .switch {

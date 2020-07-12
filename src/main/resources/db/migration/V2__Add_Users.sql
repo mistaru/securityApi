@@ -1,9 +1,9 @@
 insert into users (id, full_name, username, email, password, activity)
-        values (1, 'Argen Kasymov', 'admin', 'em_ail@bk.ru', '123456', true);
+        values (1024, 'Argen Kasymov', 'admin', 'em_ail@bk.ru', '123456', true);
 
 insert into users (id, full_name, username, email, password, activity)
-        values (2, 'David Beckham', 'user', 'mistaru@bk.ru', '123456', true);
+        values (1023, 'David Beckham', 'user', 'mistaru@bk.ru', '123456', true);
 
-insert into user_role (user_id, roles) values (1, 'USER'), (1, 'ADMIN');
-insert into user_role (user_id, roles) values (2, 'USER');
+insert into user_role (user_id, roles) values (1024, 'USER'), (1024, 'ADMIN');
+insert into user_role (user_id, roles) values (1023, 'USER');
 
