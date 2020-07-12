@@ -2,7 +2,7 @@
 
 <@c.page>
 
-    <a class="btn btn-success" data-toggle="collapse" href="#collapseExampleNewTodo" role="button"
+    <a class="btn btn-dark" data-toggle="collapse" href="#collapseExampleNewTodo" role="button"
        aria-expanded="false"
        aria-controls="collapseExampleNewTodo">
         Add
@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <a class="btn btn-dark" data-toggle="collapse" href="#collapseExampleSearch" role="button"
+    <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExampleSearch" role="button"
        aria-expanded="false"
        aria-controls="collapseExampleNewTodo">
         Search
@@ -67,10 +67,11 @@
         </div>
     </div>
 
+    <button class="btn btn-success" onclick="exportTableToExcel('tblData')">Export to Excel</button>
 
-    <h2 align="center" style="color:Black">List of user</h2>
+    <h2 align="center" style="color:Black">List of Todo</h2>
 
-    <table id="example" class="table">
+    <table id="tblData" class="table">
         <thead class="thead-dark">
         <tr>
             <th scope="col">Title</th>
@@ -78,7 +79,6 @@
             <th scope="col">Closing Date</th>
             <th scope="col">Description</th>
             <th scope="col">Edit</th>
-            <th scope="col">Delete</th>
         </tr>
         </thead>
         <tbody>
@@ -89,13 +89,41 @@
                 <td>${allTodo.getClosingDate()}</td>
                 <td>${allTodo.getDescription()}</td>
                 <td><a href="/todo/${allTodo.id}" class="card-link">Edit</a></td>
-                <td><a href="/todo/${allTodo.id}" class="card-link">Delete</a></td>
             </tr>
         </#list>
     </table>
 
     <script>
-        $('#example').tableExport();
-    </script>
+        function exportTableToExcel(tableID, filename = ''){
+            var downloadLink;
+            var dataType = 'application/vnd.ms-excel';
+            var tableSelect = document.getElementById(tableID);
+            var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
 
-    </@c.page>
+            // Specify file name
+            filename = filename?filename+'.xls':'excel_data.xls';
+
+            // Create download link element
+            downloadLink = document.createElement("a");
+
+            document.body.appendChild(downloadLink);
+
+            if(navigator.msSaveOrOpenBlob){
+                var blob = new Blob(['\ufeff', tableHTML], {
+                    type: dataType
+                });
+                navigator.msSaveOrOpenBlob( blob, filename);
+            }else{
+                // Create a link to the file
+                downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+
+                // Setting the file name
+                downloadLink.download = filename;
+
+                //triggering the function
+                downloadLink.click();
+            }
+        }
+</script>
+
+</@c.page>

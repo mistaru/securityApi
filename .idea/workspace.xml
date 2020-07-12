@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d399ef27-f158-4a33-9f75-6e124e69f80f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/dto/TodoFilterDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/example/argen/dto/TodoFilterDto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/TodoServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/TodoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/TodoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/TodoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_DB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_Users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V2__Add_Users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todoList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/todo/todoList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/userList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/userList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/securityapi.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V1__Init_DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V1__Init_DB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V2__Add_Users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db/migration/V2__Add_Users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/TodoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/TodoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/repository/TodoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/repository/TodoRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/TodoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/TodoServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/TodoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/service/TodoService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/common.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/todo/todoList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/todo/todoList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/user/userList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/user/userList.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +18,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -64,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/js" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/datatables-demo-master/datatables-demo-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -133,7 +115,7 @@
       <workItem from="1594143444431" duration="12121000" />
       <workItem from="1594190829238" duration="6989000" />
       <workItem from="1594215134169" duration="892000" />
-      <workItem from="1594287950521" duration="51304000" />
+      <workItem from="1594287950521" duration="58214000" />
     </task>
     <servers />
   </component>
@@ -177,42 +159,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="103" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1594145460700" />
-    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl" timestamp="1594548616134">
+    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl" timestamp="1594566625342">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594548616134" />
-    <state width="1323" height="142" key="GridCell.Tab.0.bottom" timestamp="1594564800441">
+    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594566625342" />
+    <state width="1323" height="124" key="GridCell.Tab.0.bottom" timestamp="1594572332277">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="142" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594564800441" />
-    <state width="1323" height="142" key="GridCell.Tab.0.center" timestamp="1594564800440">
+    <state width="1323" height="124" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594572332277" />
+    <state width="1323" height="124" key="GridCell.Tab.0.center" timestamp="1594572332276">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="142" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594564800440" />
-    <state width="1323" height="142" key="GridCell.Tab.0.left" timestamp="1594564800440">
+    <state width="1323" height="124" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594572332276" />
+    <state width="1323" height="124" key="GridCell.Tab.0.left" timestamp="1594572332275">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="142" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594564800440" />
-    <state width="1323" height="142" key="GridCell.Tab.0.right" timestamp="1594564800440">
+    <state width="1323" height="124" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594572332275" />
+    <state width="1323" height="124" key="GridCell.Tab.0.right" timestamp="1594572332276">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="142" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594564800440" />
-    <state width="1323" height="142" key="GridCell.Tab.1.bottom" timestamp="1594564800441">
+    <state width="1323" height="124" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594572332276" />
+    <state width="1323" height="124" key="GridCell.Tab.1.bottom" timestamp="1594572332083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="142" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594564800441" />
-    <state width="1323" height="142" key="GridCell.Tab.1.center" timestamp="1594564800441">
+    <state width="1323" height="124" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594572332083" />
+    <state width="1323" height="124" key="GridCell.Tab.1.center" timestamp="1594572332083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="142" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594564800441" />
-    <state width="1323" height="142" key="GridCell.Tab.1.left" timestamp="1594564800441">
+    <state width="1323" height="124" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594572332083" />
+    <state width="1323" height="124" key="GridCell.Tab.1.left" timestamp="1594572332083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="142" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594564800441" />
-    <state width="1323" height="142" key="GridCell.Tab.1.right" timestamp="1594564800441">
+    <state width="1323" height="124" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594572332083" />
+    <state width="1323" height="124" key="GridCell.Tab.1.right" timestamp="1594572332083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="142" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594564800441" />
+    <state width="1323" height="124" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594572332083" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1594143396184">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

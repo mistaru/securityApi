@@ -2,7 +2,6 @@ package org.example.argen.repository;
 
 import org.example.argen.entity.Todo;
 import org.example.argen.entity.User;
-import org.example.argen.enums.Status;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
