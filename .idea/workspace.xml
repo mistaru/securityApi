@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d399ef27-f158-4a33-9f75-6e124e69f80f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/TodoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/TodoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todoList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/todo/todoList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/common.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/todo/todoList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/todo/todoList.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,16 +44,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1e7pAlxH1nzUherZW1Wlz5UWcTd" />
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -42,14 +53,15 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/datatables-demo-master/datatables-demo-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20689656" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -75,25 +87,19 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="securityapi2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.argen.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.argen.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration name="Application" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.argen.Application" />
+      <module name="securityapi" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.Application" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.argen.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -116,11 +122,26 @@
       <workItem from="1594190829238" duration="6989000" />
       <workItem from="1594215134169" duration="892000" />
       <workItem from="1594287950521" duration="58214000" />
+      <workItem from="1594740034392" duration="4332000" />
+      <workItem from="1594744730785" duration="924000" />
+      <workItem from="1594799081586" duration="284000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Auto_Import" timestamp="1594480412962">
@@ -139,18 +160,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#SQL_Dialects/0.0.1366.728@0.0.1366.728" timestamp="1594150075947" />
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594215187496">
+    <state x="82" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594743925110">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1594215187496" />
+    <state x="82" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1594743925110" />
     <state x="348" y="76" key="#com.intellij.ide.util.MemberChooser" timestamp="1594480482418">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="348" y="76" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1594480482418" />
-    <state x="412" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1594215186154">
+    <state x="412" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1594743923331">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="412" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1594215186154" />
+    <state x="412" y="148" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1594743923331" />
     <state x="479" y="249" width="415" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594563891763">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -159,26 +180,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="103" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1594145460700" />
-    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl" timestamp="1594566625342">
+    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl" timestamp="1594742913458">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594566625342" />
-    <state width="1323" height="124" key="GridCell.Tab.0.bottom" timestamp="1594572332277">
+    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594742913458" />
+    <state width="1323" height="376" key="GridCell.Tab.0.bottom" timestamp="1594750858423">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594572332277" />
-    <state width="1323" height="124" key="GridCell.Tab.0.center" timestamp="1594572332276">
+    <state width="1323" height="376" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594750858423" />
+    <state width="1323" height="376" key="GridCell.Tab.0.center" timestamp="1594750858422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594572332276" />
-    <state width="1323" height="124" key="GridCell.Tab.0.left" timestamp="1594572332275">
+    <state width="1323" height="376" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594750858422" />
+    <state width="1323" height="376" key="GridCell.Tab.0.left" timestamp="1594750858422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594572332275" />
-    <state width="1323" height="124" key="GridCell.Tab.0.right" timestamp="1594572332276">
+    <state width="1323" height="376" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594750858422" />
+    <state width="1323" height="376" key="GridCell.Tab.0.right" timestamp="1594750858422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594572332276" />
+    <state width="1323" height="376" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594750858422" />
     <state width="1323" height="124" key="GridCell.Tab.1.bottom" timestamp="1594572332083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -195,10 +216,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="124" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594572332083" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1594143396184">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1594744645577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594143396184" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1594744645577" />
     <state x="378" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1594288006420">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

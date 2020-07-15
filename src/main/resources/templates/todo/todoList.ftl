@@ -8,6 +8,14 @@
         Add
     </a>
 
+    <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExampleSearch" role="button"
+       aria-expanded="false"
+       aria-controls="collapseExampleNewTodo">
+        Search
+    </a>
+
+    <button class="btn btn-success" onclick="exportTableToExcel('tblData')">Export to Excel</button>
+
     <div class="collapse" id="collapseExampleNewTodo">
         <div class="form-group mt-3">
             <form method="post" action="/todo/todoList">
@@ -29,12 +37,6 @@
             </form>
         </div>
     </div>
-
-    <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExampleSearch" role="button"
-       aria-expanded="false"
-       aria-controls="collapseExampleNewTodo">
-        Search
-    </a>
 
     <div class="collapse" id="collapseExampleSearch">
         <div class="form-group mt-3">
@@ -67,7 +69,6 @@
         </div>
     </div>
 
-    <button class="btn btn-success" onclick="exportTableToExcel('tblData')">Export to Excel</button>
 
     <h2 align="center" style="color:Black">List of Todo</h2>
 
@@ -94,36 +95,29 @@
     </table>
 
     <script>
-        function exportTableToExcel(tableID, filename = ''){
+        function exportTableToExcel(tableID, filename = '') {
             var downloadLink;
             var dataType = 'application/vnd.ms-excel';
             var tableSelect = document.getElementById(tableID);
             var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
 
-            // Specify file name
-            filename = filename?filename+'.xls':'excel_data.xls';
+            filename = filename ? filename + '.xls' : 'excel_data.xls';
 
-            // Create download link element
             downloadLink = document.createElement("a");
 
             document.body.appendChild(downloadLink);
 
-            if(navigator.msSaveOrOpenBlob){
+            if (navigator.msSaveOrOpenBlob) {
                 var blob = new Blob(['\ufeff', tableHTML], {
                     type: dataType
                 });
-                navigator.msSaveOrOpenBlob( blob, filename);
-            }else{
-                // Create a link to the file
+                navigator.msSaveOrOpenBlob(blob, filename);
+            } else {
                 downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
-
-                // Setting the file name
                 downloadLink.download = filename;
-
-                //triggering the function
                 downloadLink.click();
             }
         }
-</script>
+    </script>
 
 </@c.page>
