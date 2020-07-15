@@ -67,7 +67,7 @@ public class ITodoServiceImpl implements ITodoService {
     }
 
     @Override
-    public Specification<Todo> filterSearch(TodoFilterDto todo) {
+    public Specification<Todo> filterSearch(User user, TodoFilterDto todo) {
         return new Specification<Todo>() {
 
             private static final long serialVersionUID = -4082638366492629927L;
@@ -90,6 +90,10 @@ public class ITodoServiceImpl implements ITodoService {
 
                     if (todo.getFrom() != null) {
                         predicate.getExpressions().add(cb.greaterThan(root.get("closingDate"), todo.getFrom()));
+                    }
+
+                    if (todo.getAuthor() == null) {
+                        predicate.getExpressions().add(cb.equal(root.get("author"), user));
                     }
                 }
 

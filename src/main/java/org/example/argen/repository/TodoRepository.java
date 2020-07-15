@@ -21,5 +21,4 @@ public interface TodoRepository extends JpaRepository<Todo, User>, JpaSpecificat
 
     List<Todo> findTodoByAuthor(User user);
 
-    void deleteByIdAndAuthor(Long id, User user);
 }

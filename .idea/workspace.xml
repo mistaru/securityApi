@@ -21,33 +21,20 @@
   <component name="ChangeListManager">
     <list default="true" id="d399ef27-f158-4a33-9f75-6e124e69f80f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/configuration/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/constants/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/dto/TodoFilterDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/dto/TodoFilterDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/TodoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/TodoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/IEmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/IEmailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/ITodoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/IUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/ITodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todoEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/todo/todoEdit.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todoList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/todo/todoList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/configuration/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/configuration/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/ITodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/ITodoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/ITodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/ITodoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/constants/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/constants/Constants.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/TodoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/TodoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/dto/TodoFilterDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/dto/TodoFilterDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/repository/TodoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/repository/TodoRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/EmailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/EmailServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/TodoServiceImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/TodoServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/TodoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/ITodoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/service/ITodoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/ITodoServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/ITodoServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/ITodoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/ITodoServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/todo/todoEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/todo/todoEdit.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/todo/todoList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/todo/todoList.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +133,7 @@
       <workItem from="1594287950521" duration="58214000" />
       <workItem from="1594740034392" duration="4332000" />
       <workItem from="1594744730785" duration="924000" />
-      <workItem from="1594799081586" duration="9319000" />
+      <workItem from="1594799081586" duration="12451000" />
     </task>
     <servers />
   </component>
@@ -202,26 +189,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="103" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1594805243398" />
-    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl" timestamp="1594802227681">
+    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl" timestamp="1594809503119">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594802227681" />
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1594808637400">
+    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594809503119" />
+    <state width="1323" height="88" key="GridCell.Tab.0.bottom" timestamp="1594813675954">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594808637400" />
-    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1594808637400">
+    <state width="1323" height="88" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594813675954" />
+    <state width="1323" height="88" key="GridCell.Tab.0.center" timestamp="1594813675953">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594808637400" />
-    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1594808637400">
+    <state width="1323" height="88" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594813675953" />
+    <state width="1323" height="88" key="GridCell.Tab.0.left" timestamp="1594813675953">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594808637400" />
-    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1594808637400">
+    <state width="1323" height="88" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594813675953" />
+    <state width="1323" height="88" key="GridCell.Tab.0.right" timestamp="1594813675953">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594808637400" />
+    <state width="1323" height="88" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594813675953" />
     <state width="1323" height="136" key="GridCell.Tab.1.bottom" timestamp="1594808546268">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -246,6 +233,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="378" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594288006420" />
+    <state x="65" y="0" key="new project wizard" timestamp="1594809532945">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1594809532945" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1594558248039">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

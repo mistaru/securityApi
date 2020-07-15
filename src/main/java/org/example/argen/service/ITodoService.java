@@ -3,7 +3,6 @@ package org.example.argen.service;
 import org.example.argen.dto.TodoFilterDto;
 import org.example.argen.entity.Todo;
 import org.example.argen.entity.User;
-import org.example.argen.enums.Status;
 import org.springframework.data.jpa.domain.Specification;
 
 import java.time.LocalDate;
@@ -25,6 +24,6 @@ public interface ITodoService {
 
     List<Todo> findTodoByAuthor(User user);
 
-    Specification<Todo> filterSearch(TodoFilterDto todo);
+    Specification<Todo> filterSearch(User user, TodoFilterDto todo);
 
 }

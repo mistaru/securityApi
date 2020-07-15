@@ -30,7 +30,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="description" class="cols-sm-2 control-label">Closing Date</label>
                                 <div class="cols-sm-10">

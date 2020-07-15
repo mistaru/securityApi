@@ -2,6 +2,7 @@ package org.example.argen.dto;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.example.argen.entity.User;
 import org.example.argen.enums.Status;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -18,6 +19,8 @@ public class TodoFilterDto {
 
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private LocalDate to;
+
+    private User author;
 
     public TodoFilterDto() {
     }
