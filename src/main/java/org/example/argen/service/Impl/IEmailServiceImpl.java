@@ -1,8 +1,8 @@
 package org.example.argen.service.Impl;
 
 import org.example.argen.entity.Todo;
-import org.example.argen.service.EmailService;
-import org.example.argen.service.TodoService;
+import org.example.argen.service.IEmailService;
+import org.example.argen.service.ITodoService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -15,14 +15,14 @@ import java.time.LocalDate;
 import static org.example.argen.constants.Constants.*;
 
 @Service
-public class EmailServiceImpl implements EmailService {
+public class IEmailServiceImpl implements IEmailService {
 
     private final JavaMailSender mailSender;
-    private final TodoService todoService;
+    private final ITodoService ITodoService;
 
-    public EmailServiceImpl(@NotNull JavaMailSender mailSender, @NotNull TodoService todoService) {
+    public IEmailServiceImpl(@NotNull JavaMailSender mailSender, @NotNull ITodoService ITodoService) {
         this.mailSender = mailSender;
-        this.todoService = todoService;
+        this.ITodoService = ITodoService;
     }
 
     @Value("${spring.mail.username}")
@@ -42,7 +42,7 @@ public class EmailServiceImpl implements EmailService {
     @Scheduled(cron = CRON)
     public void sendNotify() {
 
-        for (Todo todo : todoService.ListIsNotDoneTodo(LocalDate.now())) {
+        for (Todo todo : ITodoService.ListIsNotDoneTodo(LocalDate.now())) {
             send(todo.getAuthor().getEmail(), SUBJECT_TODO_EXPIRATION,
                     String.format(TODO_EXPIRATION_MESSAGE, todo.getAuthor().
                             getFullName(), todo.getTitle()));

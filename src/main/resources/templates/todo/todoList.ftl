@@ -89,7 +89,10 @@
                 <td>${allTodo.getStatus()}</td>
                 <td>${allTodo.getClosingDate()}</td>
                 <td>${allTodo.getDescription()}</td>
-                <td><a href="/todo/${allTodo.id}" class="card-link">Edit</a></td>
+                <td>
+                    <a href="/todo/preUpdate/${allTodo.id}" class="card-link">Edit</a>
+                    <a href="/todo/delete?id=${allTodo.id}" class="card-link">Delete</a>
+                </td>
             </tr>
         </#list>
     </table>

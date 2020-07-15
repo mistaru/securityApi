@@ -1,7 +1,7 @@
 package org.example.argen.controller;
 
 import org.example.argen.entity.User;
-import org.example.argen.service.UserService;
+import org.example.argen.service.IUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,10 +16,10 @@ import static org.example.argen.constants.Constants.USER_ERROR_ADD;
 @Controller
 public class RegistrationController {
 
-    private final UserService userService;
+    private final IUserService IUserService;
 
-    public RegistrationController(@NotNull UserService userService) {
-        this.userService = userService;
+    public RegistrationController(@NotNull IUserService IUserService) {
+        this.IUserService = IUserService;
     }
 
     @GetMapping("/registration")
@@ -30,7 +30,7 @@ public class RegistrationController {
     @PostMapping("/registration")
     public String registerUser(@Valid User user, Model model) {
 
-        if (!userService.registerUser(user)) {
+        if (!IUserService.registerUser(user)) {
             model.addAttribute(USER_ERROR_ADD, CANT_ADD_NEW_USER);
             return "registration";
         }

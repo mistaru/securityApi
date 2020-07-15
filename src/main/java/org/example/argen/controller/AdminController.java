@@ -2,7 +2,7 @@ package org.example.argen.controller;
 
 import org.example.argen.enums.Role;
 import org.example.argen.entity.User;
-import org.example.argen.service.UserService;
+import org.example.argen.service.IUserService;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,15 +16,15 @@ import java.util.Map;
 @PreAuthorize("hasAuthority('ADMIN')")
 public class AdminController {
 
-    private final UserService userService;
+    private final IUserService IUserService;
 
-    public AdminController(@NotNull UserService userService) {
-        this.userService = userService;
+    public AdminController(@NotNull IUserService IUserService) {
+        this.IUserService = IUserService;
     }
 
     @GetMapping
     public String userList(Model model) {
-        model.addAttribute("users", userService.findAllUsers());
+        model.addAttribute("users", IUserService.findAllUsers());
         return "user/userList";
     }
 
@@ -41,7 +41,7 @@ public class AdminController {
             @RequestParam("userId") User user,
             @RequestParam Boolean active
     ) {
-        userService.saveUser(user, active, form);
+        IUserService.saveUser(user, active, form);
         return "redirect:/user";
     }
 

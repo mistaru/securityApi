@@ -1,6 +1,6 @@
 package org.example.argen.service;
 
-public interface EmailService {
+public interface IEmailService {
 
     void send(String emailTo, String subject, String message);
 

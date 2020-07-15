@@ -5,7 +5,7 @@ import org.example.argen.entity.Todo;
 import org.example.argen.entity.User;
 import org.example.argen.enums.Status;
 import org.example.argen.repository.TodoRepository;
-import org.example.argen.service.TodoService;
+import org.example.argen.service.ITodoService;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
@@ -18,14 +18,15 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Service
-public class TodoServiceImpl implements TodoService {
+public class ITodoServiceImpl implements ITodoService {
 
     private final TodoRepository todoRepository;
 
-    public TodoServiceImpl(@NotNull TodoRepository todoRepository) {
+    public ITodoServiceImpl(@NotNull TodoRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
 
+    @Override
     public void addNewTodo(User user, Todo todo) {
         todo.setAuthor(user);
         todo.setCreateDate(LocalDate.now());
@@ -33,16 +34,10 @@ public class TodoServiceImpl implements TodoService {
         todoRepository.save(todo);
     }
 
-    public boolean saveTodo(User user, Todo todo, String title, String description, Status status) {
-        if (user.getId().equals(todo.getAuthor().getId())) {
-            todo.setCreateDate(LocalDate.now());
-            todo.setAuthor(user);
-            todo.setTitle(title);
-            todo.setDescription(description);
-            todo.setStatus(status);
-            todoRepository.save(todo);
-            return true;
-        } else return false;
+    public void saveTodo(User user, Todo todo) {
+        todo.setCreateDate(LocalDate.now());
+        todo.setAuthor(user);
+        todoRepository.save(todo);
     }
 
     @Override
@@ -60,17 +55,18 @@ public class TodoServiceImpl implements TodoService {
         return todoRepository.findTodoByAuthor(user);
     }
 
-    public boolean deleteTodo(User user, Todo todo) {
-        if (user.getId().equals(todo.getAuthor().getId())) {
-            todoRepository.deleteById(todo.getId());
-            return true;
-        } else return false;
+    @Override
+    public void deleteTodo(Long id) {
+            todoRepository.deleteById(id);
+
     }
 
+    @Override
     public Todo findTodoById(Long id) {
         return todoRepository.findTodoById(id);
     }
 
+    @Override
     public Specification<Todo> filterSearch(TodoFilterDto todo) {
         return new Specification<Todo>() {
 

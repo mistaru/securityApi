@@ -9,15 +9,15 @@ import org.springframework.data.jpa.domain.Specification;
 import java.time.LocalDate;
 import java.util.List;
 
-public interface TodoService {
+public interface ITodoService {
 
     Todo findTodoById(Long id);
 
     void addNewTodo(User user, Todo todo);
 
-    boolean deleteTodo(User user, Todo todo);
+    void deleteTodo(Long id);
 
-    boolean saveTodo(User user, Todo todo, String title, String description, Status status);
+    void saveTodo(User user,Todo todo);
 
     List<Todo> ListIsNotDoneTodo(LocalDate localDate);
 

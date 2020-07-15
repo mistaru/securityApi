@@ -1,6 +1,6 @@
 package org.example.argen.configuration;
 
-import org.example.argen.service.Impl.UserServiceImpl;
+import org.example.argen.service.Impl.IUserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,11 +17,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private UserServiceImpl userServiceImpl;
+    private IUserServiceImpl userServiceImpl;
     private PasswordEncoder passwordEncoder;
 
     @Autowired
-    public void setUserServiceImpl(UserServiceImpl userServiceImpl) {
+    public void setUserServiceImpl(IUserServiceImpl userServiceImpl) {
         this.userServiceImpl = userServiceImpl;
     }
 

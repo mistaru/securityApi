@@ -4,7 +4,7 @@ import org.example.argen.dto.TodoFilterDto;
 import org.example.argen.entity.Todo;
 import org.example.argen.entity.User;
 import org.example.argen.enums.Status;
-import org.example.argen.service.TodoService;
+import org.example.argen.service.ITodoService;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
@@ -26,9 +26,9 @@ import static org.example.argen.constants.Constants.*;
 @PreAuthorize("hasAuthority('USER')")
 public class TodoController {
 
-    private final TodoService todoService;
+    private final ITodoService todoService;
 
-    public TodoController(@NotNull TodoService todoService) {
+    public TodoController(@NotNull ITodoService todoService) {
         this.todoService = todoService;
     }
 
@@ -44,43 +44,22 @@ public class TodoController {
         return "redirect:/todo";
     }
 
-    @GetMapping("{id}")
-    public String todoEditForm(@PathVariable Long id, Model model) {
-        Todo todo = todoService.findTodoById(id);
-        model.addAttribute("todo", todo);
-        return "todo/todoEdit";
+    @RequestMapping("/preUpdate/{id}")
+    public ModelAndView preUpdate(@PathVariable("id")Long id) {
+        return new ModelAndView("todo/todoEdit")
+                .addObject("todo", todoService.findTodoById(id));
     }
 
-    @PostMapping()
-    public String saveTodo(
-            @AuthenticationPrincipal User user,
-            @RequestParam("todoId") Long id,
-            @RequestParam String title,
-            @RequestParam String description,
-            @RequestParam Status status,
-            Model model
-
-    ) {
-        Todo todo = todoService.findTodoById(id);
-        if (!this.todoService.saveTodo(user, todo, title, description, status)) {
-            model.addAttribute(TODO_ERROR_EDIT, CANT_EDIT_TODO);
-            return "todo/todoEdit";
-        }
+    @PostMapping(value="/update")
+    public String update(@AuthenticationPrincipal User user, Todo todo) {
+        todoService.saveTodo(user, todo);
         return "redirect:/todo";
     }
 
-    @PostMapping("deleteTodo")
+    @GetMapping("/delete")
     @Transactional
-    public String deleteTodo(
-            @AuthenticationPrincipal User user,
-            @RequestParam("todoId") Long id,
-            Model model
-    ) {
-        Todo todo = todoService.findTodoById(id);
-        if (!todoService.deleteTodo(user, todo)) {
-            model.addAttribute(TODO_ERROR_DELETE, CANT_DELETE_TODO);
-            return "todo/todoEdit";
-        }
+    public String deleteTodo(Long id) {
+        todoService.deleteTodo(id);
         return "redirect:/todo";
     }
 

@@ -3,7 +3,7 @@ package org.example.argen.service.Impl;
 import org.example.argen.enums.Role;
 import org.example.argen.entity.User;
 import org.example.argen.repository.UserRepository;
-import org.example.argen.service.UserService;
+import org.example.argen.service.IUserService;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -15,12 +15,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
-public class UserServiceImpl implements UserDetailsService, UserService {
+public class IUserServiceImpl implements UserDetailsService, IUserService {
 
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
 
-    public UserServiceImpl(@NotNull PasswordEncoder passwordEncoder, @NotNull UserRepository userRepository) {
+    public IUserServiceImpl(@NotNull PasswordEncoder passwordEncoder, @NotNull UserRepository userRepository) {
         this.passwordEncoder = passwordEncoder;
         this.userRepository = userRepository;
     }
@@ -38,6 +38,7 @@ public class UserServiceImpl implements UserDetailsService, UserService {
 
     public boolean registerUser(User user) {
         User userFromDb = userRepository.findByUsername(user.getUsername());
+
         if (userFromDb != null) {
             return false;
         }

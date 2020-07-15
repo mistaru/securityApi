@@ -20,11 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d399ef27-f158-4a33-9f75-6e124e69f80f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/configuration/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/configuration/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/controller/TodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/TodoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/repository/TodoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/IEmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/IEmailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/ITodoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/Impl/IUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/ITodoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/argen/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/argen/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todoEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/todo/todoEdit.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/todo/todoList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/todo/todoList.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/configuration/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/configuration/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/controller/TodoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/controller/TodoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/repository/TodoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/argen/repository/TodoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/EmailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/EmailServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/TodoServiceImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/TodoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/Impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/TodoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/argen/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/todo/todoEdit.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/todo/todoEdit.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/todo/todoList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/todo/todoList.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +80,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Google Диск (mistarubk.ru@gmail.com)/Develop/JpaSpecification" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -124,7 +146,7 @@
       <workItem from="1594287950521" duration="58214000" />
       <workItem from="1594740034392" duration="4332000" />
       <workItem from="1594744730785" duration="924000" />
-      <workItem from="1594799081586" duration="284000" />
+      <workItem from="1594799081586" duration="9319000" />
     </task>
     <servers />
   </component>
@@ -176,46 +198,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="249" width="415" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1594563891763" />
-    <state x="103" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594145460700">
+    <state x="103" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594805243398">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="103" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1594145460700" />
-    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl" timestamp="1594742913458">
+    <state x="103" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1594805243398" />
+    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl" timestamp="1594802227681">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594742913458" />
-    <state width="1323" height="376" key="GridCell.Tab.0.bottom" timestamp="1594750858423">
+    <state x="463" y="92" width="440" height="517" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594802227681" />
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom" timestamp="1594808637400">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="376" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594750858423" />
-    <state width="1323" height="376" key="GridCell.Tab.0.center" timestamp="1594750858422">
+    <state width="1323" height="212" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594808637400" />
+    <state width="1323" height="212" key="GridCell.Tab.0.center" timestamp="1594808637400">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="376" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594750858422" />
-    <state width="1323" height="376" key="GridCell.Tab.0.left" timestamp="1594750858422">
+    <state width="1323" height="212" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594808637400" />
+    <state width="1323" height="212" key="GridCell.Tab.0.left" timestamp="1594808637400">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="376" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594750858422" />
-    <state width="1323" height="376" key="GridCell.Tab.0.right" timestamp="1594750858422">
+    <state width="1323" height="212" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594808637400" />
+    <state width="1323" height="212" key="GridCell.Tab.0.right" timestamp="1594808637400">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="376" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594750858422" />
-    <state width="1323" height="124" key="GridCell.Tab.1.bottom" timestamp="1594572332083">
+    <state width="1323" height="212" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594808637400" />
+    <state width="1323" height="136" key="GridCell.Tab.1.bottom" timestamp="1594808546268">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594572332083" />
-    <state width="1323" height="124" key="GridCell.Tab.1.center" timestamp="1594572332083">
+    <state width="1323" height="136" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594808546268" />
+    <state width="1323" height="136" key="GridCell.Tab.1.center" timestamp="1594808546268">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594572332083" />
-    <state width="1323" height="124" key="GridCell.Tab.1.left" timestamp="1594572332083">
+    <state width="1323" height="136" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594808546268" />
+    <state width="1323" height="136" key="GridCell.Tab.1.left" timestamp="1594808546268">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594572332083" />
-    <state width="1323" height="124" key="GridCell.Tab.1.right" timestamp="1594572332083">
+    <state width="1323" height="136" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594808546268" />
+    <state width="1323" height="136" key="GridCell.Tab.1.right" timestamp="1594808546268">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="124" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594572332083" />
+    <state width="1323" height="136" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594808546268" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1594744645577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

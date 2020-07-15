@@ -11,6 +11,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface TodoRepository extends JpaRepository<Todo, User>, JpaSpecificationExecutor<Todo> {
+
     Todo findTodoById(Long id);
 
     void deleteById(Long id);
@@ -19,4 +20,6 @@ public interface TodoRepository extends JpaRepository<Todo, User>, JpaSpecificat
     List<Todo> ListIsNotDoneTodo(@Param("date") LocalDate date);
 
     List<Todo> findTodoByAuthor(User user);
+
+    void deleteByIdAndAuthor(Long id, User user);
 }
