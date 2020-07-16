@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
 import java.time.LocalDate;
 import java.util.List;
 
-public interface TodoRepository extends JpaRepository<Todo, User>, JpaSpecificationExecutor<Todo> {
+public interface TodoRepository extends JpaRepository<Todo, Long>, JpaSpecificationExecutor<Todo> {
 
     Todo findTodoById(Long id);
 

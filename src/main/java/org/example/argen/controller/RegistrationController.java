@@ -16,10 +16,10 @@ import static org.example.argen.constants.Constants.USER_ERROR_ADD;
 @Controller
 public class RegistrationController {
 
-    private final IUserService IUserService;
+    private final IUserService userService;
 
-    public RegistrationController(@NotNull IUserService IUserService) {
-        this.IUserService = IUserService;
+    public RegistrationController(@NotNull IUserService userService) {
+        this.userService = userService;
     }
 
     @GetMapping("/registration")
@@ -30,7 +30,7 @@ public class RegistrationController {
     @PostMapping("/registration")
     public String registerUser(@Valid User user, Model model) {
 
-        if (!IUserService.registerUser(user)) {
+        if (!userService.registerUser(user)) {
             model.addAttribute(USER_ERROR_ADD, CANT_ADD_NEW_USER);
             return "registration";
         }

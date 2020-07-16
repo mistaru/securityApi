@@ -1,6 +1,6 @@
 package org.example.argen.configuration;
 
-import org.example.argen.service.Impl.IUserServiceImpl;
+import org.example.argen.service.Impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,11 +17,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private IUserServiceImpl userServiceImpl;
+    private UserServiceImpl userServiceImpl;
     private PasswordEncoder passwordEncoder;
 
     @Autowired
-    public void setUserServiceImpl(IUserServiceImpl userServiceImpl) {
+    public void setUserServiceImpl(UserServiceImpl userServiceImpl) {
         this.userServiceImpl = userServiceImpl;
     }
 
@@ -39,17 +39,17 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                    .antMatchers("/", "/registration", "/static/**").permitAll()
-                    .anyRequest().authenticated()
+                .antMatchers("/", "/registration", "/static/**").permitAll()
+                .anyRequest().authenticated()
                 .and()
-                    .formLogin()
-                    .loginPage("/login")
-                    .defaultSuccessUrl("/main", true)
+                .formLogin()
+                .loginPage("/login")
+                .defaultSuccessUrl("/main", true)
                 .permitAll()
                 .and()
-                    .logout()
-                    .logoutSuccessUrl("/")
-                    .permitAll();
+                .logout()
+                .logoutSuccessUrl("/")
+                .permitAll();
     }
 
     @Override

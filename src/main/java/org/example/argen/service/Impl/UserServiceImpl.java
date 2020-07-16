@@ -15,12 +15,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
-public class IUserServiceImpl implements UserDetailsService, IUserService {
+public class UserServiceImpl implements UserDetailsService, IUserService {
 
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
 
-    public IUserServiceImpl(@NotNull PasswordEncoder passwordEncoder, @NotNull UserRepository userRepository) {
+    public UserServiceImpl(@NotNull PasswordEncoder passwordEncoder, @NotNull UserRepository userRepository) {
         this.passwordEncoder = passwordEncoder;
         this.userRepository = userRepository;
     }

@@ -15,14 +15,14 @@ import java.time.LocalDate;
 import static org.example.argen.constants.Constants.*;
 
 @Service
-public class IEmailServiceImpl implements IEmailService {
+public class EmailServiceImpl implements IEmailService {
 
     private final JavaMailSender mailSender;
-    private final ITodoService ITodoService;
+    private final ITodoService todoService;
 
-    public IEmailServiceImpl(@NotNull JavaMailSender mailSender, @NotNull ITodoService ITodoService) {
+    public EmailServiceImpl(@NotNull JavaMailSender mailSender, @NotNull ITodoService todoService) {
         this.mailSender = mailSender;
-        this.ITodoService = ITodoService;
+        this.todoService = todoService;
     }
 
     @Value("${spring.mail.username}")
@@ -42,7 +42,7 @@ public class IEmailServiceImpl implements IEmailService {
     @Scheduled(cron = CRON)
     public void sendNotify() {
 
-        for (Todo todo : ITodoService.ListIsNotDoneTodo(LocalDate.now())) {
+        for (Todo todo : todoService.ListIsNotDoneTodo(LocalDate.now())) {
             send(todo.getAuthor().getEmail(), SUBJECT_TODO_EXPIRATION,
                     String.format(TODO_EXPIRATION_MESSAGE, todo.getAuthor().
                             getFullName(), todo.getTitle()));

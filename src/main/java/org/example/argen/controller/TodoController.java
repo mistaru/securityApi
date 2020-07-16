@@ -42,12 +42,12 @@ public class TodoController {
     }
 
     @RequestMapping("/preUpdate/{id}")
-    public ModelAndView preUpdate(@PathVariable("id")Long id) {
+    public ModelAndView preUpdate(@PathVariable("id") Long id) {
         return new ModelAndView("todo/todoEdit")
                 .addObject("todo", todoService.findTodoById(id));
     }
 
-    @PostMapping(value="/update")
+    @PostMapping(value = "/update")
     public String update(@AuthenticationPrincipal User user, Todo todo) {
         todoService.saveTodo(user, todo);
         return "redirect:/todo";

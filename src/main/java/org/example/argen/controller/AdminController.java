@@ -16,15 +16,15 @@ import java.util.Map;
 @PreAuthorize("hasAuthority('ADMIN')")
 public class AdminController {
 
-    private final IUserService IUserService;
+    private final IUserService userService;
 
-    public AdminController(@NotNull IUserService IUserService) {
-        this.IUserService = IUserService;
+    public AdminController(@NotNull IUserService userService) {
+        this.userService = userService;
     }
 
     @GetMapping
     public String userList(Model model) {
-        model.addAttribute("users", IUserService.findAllUsers());
+        model.addAttribute("users", userService.findAllUsers());
         return "user/userList";
     }
 
@@ -41,7 +41,7 @@ public class AdminController {
             @RequestParam("userId") User user,
             @RequestParam Boolean active
     ) {
-        IUserService.saveUser(user, active, form);
+        userService.saveUser(user, active, form);
         return "redirect:/user";
     }
 

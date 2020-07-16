@@ -18,11 +18,11 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Service
-public class ITodoServiceImpl implements ITodoService {
+public class TodoServiceImpl implements ITodoService {
 
     private final TodoRepository todoRepository;
 
-    public ITodoServiceImpl(@NotNull TodoRepository todoRepository) {
+    public TodoServiceImpl(@NotNull TodoRepository todoRepository) {
         this.todoRepository = todoRepository;
     }
 
@@ -57,7 +57,7 @@ public class ITodoServiceImpl implements ITodoService {
 
     @Override
     public void deleteTodo(Long id) {
-            todoRepository.deleteById(id);
+        todoRepository.deleteById(id);
 
     }
 
@@ -68,8 +68,8 @@ public class ITodoServiceImpl implements ITodoService {
 
     @Override
     public Specification<Todo> filterSearch(User user, TodoFilterDto todo) {
-        return new Specification<Todo>() {
 
+        return new Specification<Todo>() {
             private static final long serialVersionUID = -4082638366492629927L;
 
             @Override
