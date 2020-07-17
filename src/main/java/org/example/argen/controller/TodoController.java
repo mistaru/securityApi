@@ -54,7 +54,6 @@ public class TodoController {
     }
 
     @GetMapping("/delete")
-    @Transactional
     public String deleteTodo(Long id) {
         todoService.deleteTodo(id);
         return "redirect:/todo";
