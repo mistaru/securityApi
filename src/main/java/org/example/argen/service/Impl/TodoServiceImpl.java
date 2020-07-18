@@ -6,6 +6,8 @@ import org.example.argen.entity.User;
 import org.example.argen.enums.Status;
 import org.example.argen.repository.TodoRepository;
 import org.example.argen.service.ITodoService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
@@ -46,19 +48,18 @@ public class TodoServiceImpl implements ITodoService {
     }
 
     @Override
-    public List<Todo> findAllTodo(Specification<Todo> specification) {
-        return todoRepository.findAll(specification);
+    public Page<Todo> findAllTodo(Specification<Todo> specification, Pageable pageable) {
+        return todoRepository.findAll(specification, pageable);
     }
 
     @Override
-    public List<Todo> findTodoByAuthor(User user) {
-        return todoRepository.findTodoByAuthor(user);
+    public Page<Todo> findTodoByAuthor(User user, Pageable pageable) {
+        return todoRepository.findTodoByAuthor(user, pageable);
     }
 
     @Override
     public void deleteTodo(Long id) {
         todoRepository.deleteById(id);
-
     }
 
     @Override

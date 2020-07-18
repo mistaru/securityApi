@@ -3,6 +3,8 @@ package org.example.argen.service;
 import org.example.argen.dto.TodoFilterDto;
 import org.example.argen.entity.Todo;
 import org.example.argen.entity.User;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 
 import java.time.LocalDate;
@@ -20,9 +22,9 @@ public interface ITodoService {
 
     List<Todo> ListIsNotDoneTodo(LocalDate localDate);
 
-    List<Todo> findAllTodo(Specification<Todo> specification);
+    Page<Todo> findAllTodo(Specification<Todo> specification, Pageable pageable);
 
-    List<Todo> findTodoByAuthor(User user);
+    Page<Todo> findTodoByAuthor(User user, Pageable pageable);
 
     Specification<Todo> filterSearch(User user, TodoFilterDto todo);
 

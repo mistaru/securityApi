@@ -16,7 +16,7 @@
 
             <#if !isAdmin>
                 <li class="nav-item">
-                    <a class="nav-link" href="/todo">Todo list</a>
+                    <a class="nav-link" href="/todo/main">Todo list</a>
                 </li>
             </#if>
 

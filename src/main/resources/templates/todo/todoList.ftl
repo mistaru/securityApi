@@ -1,5 +1,6 @@
 <#import "../parts/common.ftl" as c>
 
+
 <@c.page>
 
     <a class="btn btn-dark" data-toggle="collapse" href="#collapseExampleNewTodo" role="button"
@@ -72,30 +73,8 @@
 
     <h2 align="center" style="color:Black">List of Todo</h2>
 
-    <table id="tblData" class="table">
-        <thead class="thead-dark">
-        <tr>
-            <th scope="col">Title</th>
-            <th scope="col">Status</th>
-            <th scope="col">Closing Date</th>
-            <th scope="col">Description</th>
-            <th scope="col">Edit</th>
-        </tr>
-        </thead>
-        <tbody>
-        <#list allTodo as allTodo>
-            <tr>
-                <td>${allTodo.getTitle()}</td>
-                <td>${allTodo.getStatus()}</td>
-                <td>${allTodo.getClosingDate()}</td>
-                <td>${allTodo.getDescription()}</td>
-                <td>
-                    <a href="/todo/preUpdate/${allTodo.id}" class="card-link">Edit</a>
-                    <a href="/todo/delete?id=${allTodo.id}" class="card-link">Delete</a>
-                </td>
-            </tr>
-        </#list>
-    </table>
+
+    <#include "../parts/listTodo.ftl" />
 
     <script>
         function exportTableToExcel(tableID, filename = '') {
