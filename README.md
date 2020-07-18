@@ -1,7 +1,7 @@
 # Test project
 
-ScpringBoot
-SpringSecurity
+- ScpringBoot
+- SpringSecurity
 Hibernate
 FreeMarker
 Postresql
