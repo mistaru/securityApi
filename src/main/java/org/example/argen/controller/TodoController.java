@@ -43,17 +43,6 @@ public class TodoController {
         return "todo/todoList";
     }
 
-    @RequestMapping("/list2")
-    public String list2(TodoFilterDto todo, @AuthenticationPrincipal User user,
-                        @PageableDefault(size = 5, sort = { "id" },
-                                direction = Sort.Direction.DESC) Pageable pageable, Model model) {
-        Page<Todo> page = todoService.findAllTodo(todoService.filterSearch(user, todo), pageable);
-
-        model.addAttribute("page", page);
-        model.addAttribute("url", "/todo/list2");
-        return "todo/todoList";
-    }
-
     @PostMapping("todoList")
     public String addNewTodo(@AuthenticationPrincipal User user, @Valid Todo todo) {
         todoService.addNewTodo(user, todo);
@@ -78,4 +67,14 @@ public class TodoController {
         return "redirect:/todo/main";
     }
 
+    @RequestMapping("/list2")
+    public String list2(TodoFilterDto todo, @AuthenticationPrincipal User user,
+                        @PageableDefault(size = 5, sort = { "id" },
+                                direction = Sort.Direction.DESC) Pageable pageable, Model model) {
+        Page<Todo> page = todoService.findAllTodo(todoService.filterSearch(user, todo), pageable);
+
+        model.addAttribute("page", page);
+        model.addAttribute("url", "/todo/list2");
+        return "todo/todoList";
+    }
 }
